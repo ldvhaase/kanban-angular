@@ -39,36 +39,44 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "src/index.html",
-        "hash": "14836867506669278911"
-      },
-      {
-        "file": "src/app/main-view/main-view.component.html",
-        "hash": "8036256944497615902"
-      },
-      {
-        "file": "src/app/add-item-modal/add-item-modal.component.html",
-        "hash": "14491263011878290956"
+        "file": "src/app/app.config.ts",
+        "hash": "10376405385279548354"
       },
       {
         "file": "src/app/add-item-modal/add-item-modal.component.scss",
         "hash": "3244421341483603138"
       },
       {
+        "file": "README.md",
+        "hash": "8817381211108855388"
+      },
+      {
+        "file": "src/app/main-view/main-view.component.ts",
+        "hash": "13716612380365951127"
+      },
+      {
+        "file": "src/app/main-view/main-view.component.html",
+        "hash": "8251113973946546271"
+      },
+      {
         "file": "src/app/add-item-modal/add-item-modal.component.ts",
         "hash": "7574846504821935727"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "14836867506669278911"
       },
       {
         "file": "src/main-styles.scss",
         "hash": "15575434307145239959"
       },
       {
-        "file": "src/app/main-view/main-view.component.ts",
-        "hash": "14533955310013175190"
+        "file": "src/app/main-view/main-view.component.scss",
+        "hash": "2470709339146898823"
       },
       {
-        "file": "src/app/app.config.ts",
-        "hash": "10376405385279548354"
+        "file": "src/app/add-item-modal/add-item-modal.component.html",
+        "hash": "14491263011878290956"
       }
     ],
     "projectFileMap": {

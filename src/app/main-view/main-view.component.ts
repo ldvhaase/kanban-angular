@@ -80,6 +80,10 @@ export class MainViewComponent {
     });
   }
 
+  deleteItem(columnIndex: number, taskIndex: number): void {
+    this.board.columns[columnIndex].tasks.splice(taskIndex, 1);
+  }
+
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
