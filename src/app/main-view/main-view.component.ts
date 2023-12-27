@@ -1,21 +1,34 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Board } from '../models';
-import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
-import {DragDropModule} from '@angular/cdk/drag-drop';
-
+import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { AddItemModalComponent } from '../add-item-modal/add-item-modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-main-view',
   standalone: true,
-  imports: [CommonModule, DragDropModule],
+  imports: [
+    CommonModule,
+    DragDropModule,
+    AddItemModalComponent,
+    MatDialogModule,
+    MatIconModule,
+    MatButtonModule,
+
+  ],
   templateUrl: './main-view.component.html',
   styleUrl: './main-view.component.scss'
 })
 export class MainViewComponent {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
+  // initial static kanban board
   board: Board = {
     name: 'Demo Board',
     columns: [{
@@ -54,6 +67,19 @@ export class MainViewComponent {
     }]
   };
 
+  openDialog(columnIndex: number): void {
+    const dialogRef = this.dialog.open(AddItemModalComponent, {
+      width: 'fit-content',
+      data: { columnName: this.board.columns[columnIndex].name },
+    });
+
+    dialogRef.afterClosed().subscribe((result: string) => {
+      if (result) {
+        this.board.columns[columnIndex].tasks.push(result);
+      }
+    });
+  }
+
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
@@ -64,6 +90,4 @@ export class MainViewComponent {
         event.currentIndex);
     }
   }
-
-
 }

@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Add Item to {{ data.columnName }}</h2>
+<mat-dialog-content class="mat-typography">
+  <mat-form-field>
+    <input matInput #itemInput placeholder="New Item" />
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button cdkFocusInitial (click)="addItem(itemInput.value)">Add</button>
+</mat-dialog-actions>

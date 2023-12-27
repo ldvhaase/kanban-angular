@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run kanban-angular:ng",
+    "startTime": "2023-12-27T05:17:31.445Z",
+    "endTime": "2023-12-27T05:17:34.220Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "kanban-angular:ng",
+      "target": "ng",
+      "projectName": "kanban-angular",
+      "hash": "4083349829699152312",
+      "startTime": "2023-12-27T05:17:31.452Z",
+      "endTime": "2023-12-27T05:17:34.219Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

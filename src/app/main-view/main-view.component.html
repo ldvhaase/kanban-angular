@@ -15,15 +15,15 @@
     <div class="board-wrapper">
       <!-- Column container -->
       <div class="board-columns" cdkDropListGroup>
-        <div class="board-column" *ngFor="let column of board.columns">
+        <div class="board-column" *ngFor="let column of board.columns; index as i">
           <div class="column-title">
             {{ column.name }}
+            <button mat-icon-button (click)="openDialog(i)">
+              <mat-icon>add_circle</mat-icon>
+            </button>
           </div>
-
-          <div class="tasks-container"
-          cdkDropList
-          [cdkDropListData]="column.tasks"
-          (cdkDropListDropped)="drop($event)">
+          <!-- List of Tasks -->
+          <div class="tasks-container" cdkDropList [cdkDropListData]="column.tasks" (cdkDropListDropped)="drop($event)">
             <div class="task" *ngFor="let item of column.tasks" cdkDrag>
               {{ item }}
             </div>

@@ -8,6 +8,7 @@
     "@angular/compiler": "^17.0.0",
     "@angular/core": "^17.0.0",
     "@angular/forms": "^17.0.0",
+    "@angular/material": "^17.0.4",
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/router": "^17.0.0",
@@ -38,40 +39,36 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "src/main-styles.scss",
-        "hash": "6976681717923168598"
-      },
-      {
-        "file": "src/app/main-view/main-view.component.scss",
-        "hash": "11511884534512728373"
+        "file": "src/index.html",
+        "hash": "14836867506669278911"
       },
       {
         "file": "src/app/main-view/main-view.component.html",
-        "hash": "10094992088709755972"
+        "hash": "8036256944497615902"
+      },
+      {
+        "file": "src/app/add-item-modal/add-item-modal.component.html",
+        "hash": "14491263011878290956"
+      },
+      {
+        "file": "src/app/add-item-modal/add-item-modal.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/add-item-modal/add-item-modal.component.ts",
+        "hash": "7574846504821935727"
+      },
+      {
+        "file": "src/main-styles.scss",
+        "hash": "15575434307145239959"
       },
       {
         "file": "src/app/main-view/main-view.component.ts",
-        "hash": "15263062023363771918"
+        "hash": "14533955310013175190"
       },
       {
-        "file": "src/styles.scss",
-        "hash": "9060559124295963935"
-      },
-      {
-        "file": "src/app/app.component.html",
-        "hash": "17816966185630879015"
-      },
-      {
-        "file": "package.json",
-        "hash": "15616988626959796149"
-      },
-      {
-        "file": "src/app/models.ts",
-        "hash": "1872974017411247647"
-      },
-      {
-        "file": "src/app/app.routes.ts",
-        "hash": "10125637815853205588"
+        "file": "src/app/app.config.ts",
+        "hash": "10376405385279548354"
       }
     ],
     "projectFileMap": {
@@ -98,7 +95,7 @@
         },
         {
           "file": "README.md",
-          "hash": "17847208546634297275"
+          "hash": "13929318790160869288"
         },
         {
           "file": "nx.json",
@@ -106,17 +103,19 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "1062122284828273359"
+          "hash": "17751930963788488497"
         },
         {
           "file": "package.json",
-          "hash": "17371387826177094228",
+          "hash": "11387105064669931750",
           "deps": [
             "npm:@angular/animations",
+            "npm:@angular/cdk",
             "npm:@angular/common",
             "npm:@angular/compiler",
             "npm:@angular/core",
             "npm:@angular/forms",
+            "npm:@angular/material",
             "npm:@angular/platform-browser",
             "npm:@angular/platform-browser-dynamic",
             "npm:@angular/router",
@@ -148,8 +147,25 @@
           "hash": "13810593397351675076"
         },
         {
+          "file": "src/app/add-item-modal/add-item-modal.component.html",
+          "hash": "16889324377927749096"
+        },
+        {
+          "file": "src/app/add-item-modal/add-item-modal.component.scss",
+          "hash": "4055606894390288348"
+        },
+        {
+          "file": "src/app/add-item-modal/add-item-modal.component.ts",
+          "hash": "15083783974260902628",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/forms"
+          ]
+        },
+        {
           "file": "src/app/app.component.html",
-          "hash": "6880513722212066549"
+          "hash": "17816966185630879015"
         },
         {
           "file": "src/app/app.component.scss",
@@ -181,10 +197,32 @@
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "12397496131277534773",
+          "hash": "10125637815853205588",
           "deps": [
             "npm:@angular/router"
           ]
+        },
+        {
+          "file": "src/app/main-view/main-view.component.html",
+          "hash": "577651937160904236"
+        },
+        {
+          "file": "src/app/main-view/main-view.component.scss",
+          "hash": "11511884534512728373"
+        },
+        {
+          "file": "src/app/main-view/main-view.component.ts",
+          "hash": "11667176135988527562",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/cdk",
+            "npm:@angular/material"
+          ]
+        },
+        {
+          "file": "src/app/models.ts",
+          "hash": "1872974017411247647"
         },
         {
           "file": "src/assets/.gitkeep",
@@ -208,7 +246,7 @@
         },
         {
           "file": "src/main-styles.scss",
-          "hash": "9564224945577986028"
+          "hash": "6976681717923168598"
         },
         {
           "file": "src/main.ts",
@@ -219,7 +257,7 @@
         },
         {
           "file": "src/styles.scss",
-          "hash": "1231243395074418751"
+          "hash": "9060559124295963935"
         },
         {
           "file": "tsconfig.app.json",
