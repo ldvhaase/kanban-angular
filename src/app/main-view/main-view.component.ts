@@ -12,7 +12,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
   templateUrl: './main-view.component.html',
   styleUrl: './main-view.component.scss'
 })
-export class MainViewComponent implements OnInit {
+export class MainViewComponent {
 
   constructor() { }
 
@@ -53,9 +53,6 @@ export class MainViewComponent implements OnInit {
         ]
     }]
   };
-
-  ngOnInit() {
-  }
 
   drop(event: CdkDragDrop<string[]>) {
     if (event.previousContainer === event.container) {
